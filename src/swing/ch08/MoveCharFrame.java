@@ -90,8 +90,6 @@ public class MoveCharFrame extends JFrame implements KeyListener {
             count++;
         } else if (keyCode == 27) {
             label.setLocation(INIT_X, INIT_Y);
-        } else if () {
-
         }
 
         setTitle("방향키로 움직이기 연습 Count: " + count);
