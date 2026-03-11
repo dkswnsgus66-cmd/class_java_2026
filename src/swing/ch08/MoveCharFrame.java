@@ -13,10 +13,6 @@ public class MoveCharFrame extends JFrame implements KeyListener {
     private final int INIT_X = 225;
     private final int INIT_Y = 200;
     private final int FRAME_SIZE = 500;
-    private Graphics line1;
-    private Graphics line2;
-    private Graphics line3;
-    private Graphics line4;
 
     public MoveCharFrame() {
         // setTitle("방향키로 움직이기 연습 Count: " + count);
