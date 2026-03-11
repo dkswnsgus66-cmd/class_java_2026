@@ -115,7 +115,7 @@ public class MyFrame2 extends JFrame {
 
                 // 배경 밖으로 나가지 않게 범위설정 (최댓값 제한)
                 //
-                x = M`ath.max(MIN_POS,Math.min(x,MAX_X));
+                x = Math.max(MIN_POS,Math.min(x,MAX_X));
                 y = Math.max(MIN_POS,Math.min(y,MAX_Y));
 
 
