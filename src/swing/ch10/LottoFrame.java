@@ -39,7 +39,7 @@ public class LottoFrame extends JFrame implements ActionListener {
 
         button.setBounds(0, 0, 800, 50);
         panel.add(button);
-
+        // 배치와 크기를 한번에 지정
         textBox.setBounds(0, 80, 800, 100);
         textBox.setFont(new Font("맑은 고딕", Font.BOLD, 30));
         textBox.setForeground(Color.GRAY);
@@ -100,6 +100,7 @@ public class LottoFrame extends JFrame implements ActionListener {
                 g.drawOval(x, y, 80, 80);
 
                 g.setFont(new Font("맑은 고딕", Font.BOLD, 24));
+                // 그림에 숫자넣는 코드 그림을 기준으로 위치 정하기
                 g.drawString(String.valueOf(num), x + 28, y + 48);
             }
         }
@@ -108,8 +109,8 @@ public class LottoFrame extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == button) {
-            LottoRandomNumber lottoRandomNumber = new LottoRandomNumber();
-            lottoRandomNumber.makeNumber();
+            LottoRandomNumber lottoRandomNumber = new LottoRandomNumber(); // 객체 생성
+            lottoRandomNumber.makeNumber(); // 메서드 호출하여 랜덤숫자 생성
 //            lottoRandomNumber.sortRandomNumber();// 오름차순 정렬
             // 메서드를 setNumber메서드를 직접 추가하여 만듬
             // lottoPanel 의 setNumber메서드 호출 lottoRandomNumber.getNumber() lottoRandomNumber 클래스의 숫자를 넣음
